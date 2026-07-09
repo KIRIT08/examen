@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnología - Corporación ABC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+
+        <div class="logo-area">
+            <img src="logo.jpg" alt="Logo Corporación ABC">
+        </div>
+
+        <div class="info-area">
+            <h1>Corporación ABC SAC</h1>
+
+            <img src="logo.jpg" alt="Imagen debajo del título" class="imagen-titulo">
+
+            <p>Av. Perú 123 - Piura</p>
+
+            <nav class="menu-header">
+                <a href="index.html">Inicio</a>
+                <a href="#">Quiénes somos</a>
+                <a href="#">Actividades</a>
+                <a href="#">Contáctenos</a>
+            </nav>
+        </div>
+
+    </div>
+</header>
+
+<main class="contenido-principal">
+
+    <aside class="botones-laterales">
+        <a href="#" class="boton-cuadrado">Los más vendidos</a>
+        <a href="#" class="boton-cuadrado">Ofertas de semana</a>
+        <a href="#" class="boton-cuadrado">Liquidación</a>
+        <a href="#" class="boton-cuadrado">Entidades públicas</a>
+    </aside>
+<section class="contenido-tecnologia">
+
+    <h2>Tecnología</h2>
+
+    <div class="productos-tecnologia">
+
+        <div class="producto">
+            <img src="images.jpg" alt="PC y Laptops">
+
+            <button class="nombre-producto" onclick="abrirPcLaptops()">
+                PC y Laptops
+            </button>
+        </div>
+
+        <div class="producto">
+            <img src="telefono.jpg" alt="Móviles">
+
+            <button class="nombre-producto">
+                Móviles
+            </button>
+        </div>
+
+        <div class="producto">
+            <img src="drones.jpg" alt="Drones">
+
+            <button class="nombre-producto">
+                Drones
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+<!-- Ventana flotante de bienvenida -->
+<div class="modal" id="modalBienvenida">
+    <div class="modal-contenido">
+        <h2>Bienvenido a PC y Laptops!</h2>
+        <button onclick="aceptarBienvenida()">Aceptar</button>
+    </div>
+</div>
+
+<!-- Ventana flotante para seleccionar producto -->
+<div class="modal" id="modalSeleccion">
+    <div class="modal-contenido">
+        <h2>Seleccionar producto</h2>
+
+        <select id="productoSeleccionado">
+            <option value="laptops">Laptops</option>
+            <option value="pc">PC de escritorio</option>
+            <option value="accesorios">Accesorios</option>
+        </select>
+
+        <button onclick="irAVentas()">Aceptar</button>
+    </div>
+</div>
+
+<footer class="pie-pagina">
+    <p>© 2026 Corporación ABC SAC - Derechos reservados</p>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
