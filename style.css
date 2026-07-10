@@ -17,7 +17,7 @@
     width: 85px;
     height: 85px;
     object-fit: contain;
-    border-radius: 8px;
+    border-radius: 50%;
 }
 
 .info-area {
@@ -53,6 +53,7 @@
     margin: 8px auto;
     display: block;
     object-fit: contain;
+    border-radius: 50%;
 }
 
 /* --- Contenedor principal: botones + rectángulo --- */
@@ -183,6 +184,7 @@
     width: 60px;
     height: 60px;
     object-fit: contain;
+    border-radius: 50%;
 }
 
 .logo-central p {

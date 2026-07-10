@@ -16,7 +16,16 @@ function aceptarBienvenida() {
 }
 
 function irAVentas() {
-    let producto = document.getElementById("productoSeleccionado").value;
+    window.location.href = "ventas.html";
+}
 
-    window.location.href = "ventas.html?producto=" + producto;
+function mostrarCompra(nombre, precio) {
+    document.getElementById("nombreLaptop").textContent = nombre;
+    document.getElementById("precioLaptop").textContent = precio;
+
+    document.getElementById("modalCompra").style.display = "flex";
+}
+
+function cerrarCompra() {
+    document.getElementById("modalCompra").style.display = "none";
 }

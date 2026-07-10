@@ -52,21 +52,21 @@
                 <img src="lenovo.jpg" alt="Laptop Lenovo">
                 <h3>Laptop Lenovo</h3>
                 <p>S/ 2,500.00</p>
-                <button>Comprar</button>
+                <button onclick="mostrarCompra('Laptop Lenovo', 'S/ 2,500.00')">Comprar</button>
             </div>
 
             <div class="tarjeta-laptop">
                 <img src="hp.jpg" alt="Laptop HP">
                 <h3>Laptop HP</h3>
                 <p>S/ 2,800.00</p>
-                <button>Comprar</button>
+                <button onclick="mostrarCompra('Laptop HP', 'S/ 2,800.00')">Comprar</button>
             </div>
 
             <div class="tarjeta-laptop">
-                <img src="asu" alt="Laptop Asus">
+                <img src="asus.jpg" alt="Laptop Asus">
                 <h3>Laptop Asus</h3>
                 <p>S/ 3,200.00</p>
-                <button>Comprar</button>
+                <button onclick="mostrarCompra('Laptop Asus', 'S/ 3,200.00')">Comprar</button>
             </div>
 
         </div>
@@ -74,10 +74,21 @@
     </section>
 
 </main>
+<div class="modal" id="modalCompra">
+    <div class="modal-contenido">
+        <h2>Vendido</h2>
+
+        <p><strong>Producto:</strong> <span id="nombreLaptop"></span></p>
+        <p><strong>Precio:</strong> <span id="precioLaptop"></span></p>
+
+        <button onclick="cerrarCompra()">Aceptar</button>
+    </div>
+</div>
 
 <footer class="pie-pagina">
     <p>© 2026 Corporación ABC SAC - Derechos reservados</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
